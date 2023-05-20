@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    height: 900em;
+    background-color: rgb(3,40,48);
+}
+.header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 50;
+    color: whitesmoke;    
+    margin-top: 5em;
+}
+li{
+    display: inline-block;
+}
+.header #author p{
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-left: 16em;
+    position: relative;
+    font-style: italic;
+    font-weight: 20;
+    margin-top: 0.5em;
+}
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5em;
+}
+.title #head-title{
+    font-size: 4.5em ;
+    text-align: center;
+}
+
+.title #sub-head-title{
+    text-align: center;
+    margin-top: 1.2em;
+    font-size: 2.2em;
+}
+
+#home-page{
+    display: block;
+    width: 1140px;
+    height: 700px;
+    background-color: azure;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    margin-top: 15em;
+    position: relative;
+}
+.clear {
+    clear: both;
+}
+
+.caret-btn{
+    font-size: 6em;
+    color: rgb(3,40,48);
+    opacity: 0.5;
+
+}
+.caret-btn:hover{
+    opacity: 1;
+
+}
+.fa-caret-left {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+
+.fa-caret-right {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+}
+#home-page img{
+    position: absolute;
+    right: 5em;
+    top: -7em;
+    width: 42em;
+    height: 66em;
+    pointer-events: none
+
+}
+
+.head-of-homepage {
+    position: absolute;
+    top: 3em;
+    left: 8em;
+    position: relative;
+}
+#company-logo h2{
+    font-size: 3em;
+    display: inline-block;
+}
+#company-logo h2:first-child{
+    margin-right: -3.5px;
+    color: rgb(51,187,255)
+}
+#company-logo h2:last-child{
+    color: rgb(0,77,77)
+}
+.nav {
+    position: absolute;
+    right: 10em
+}
+.nav-bar > li > a{
+    color:rgb(15, 14, 12);
+    text-decoration: none;
+    line-height: 46.5px;
+    font-size: 2em;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 200;
+}
+.nav-bar li a:hover{
+    background-color: antiquewhite;
+}
+#lock-icon{
+    font-size: 20px;
+}
+.homepage-content{
+    display: none;
+    width: 90%;
+    height: 85%; 
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.showing{
+    display:flex;
+    animation: modalFadeIn ease 1s
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+.homepage-text{
+    position: absolute;
+    top: 6em;
+    left: 8em;
+}
+.homepage-text > h1{
+    font-size: 5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(0,77,77)
+   
+}
+.homepage-text > p{
+    font-size: 2em;
+    line-height: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.05em;
+}
+#first-p{
+    margin-top: 2em;
+}
+.homepage-text .btn-hp{
+    position: absolute;
+    display: block;
+    /* width: 30em;
+    left: 50%;
+    transform: translateX(-50%); */
+    margin-top: 5em;
+}
+.btn-hp button{
+    height: 2.5em;
+    width: 10em;
+    margin: 0 0.5em;
+    font-size: 2em;
+    float: left;
+    border-radius: 25px;
+    font-weight: 50;
+    font-style: oblique;
+}
+#order-now {
+    background-color:rgb(0,77,77);
+    color:aliceblue
+}
+
+#read-more{
+    background-color:azure;
+    border-color: rgb(0,77,77);
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+#About {
+    background-color: rgb(3,40,48);
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+}
+#half-left, #half-right{
+    width: 470px;
+    display: block;
+    float: left;
+}
+#About-head {
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 20;
+    color: whitesmoke;
+}
+#About .text {
+    margin-top: 5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 10;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+}
+#About .text h2{
+    font-size: 3.5em;
+    margin-bottom: 0.4em;
+    margin-top: 1.6em;
+    font-weight: 20;
+}
+#About .text p{
+    font-size: 2em;
+    line-height: 2em;
+    margin-left: 1em;
+}
+#bakery-store-img{
+    margin-top: 8em;
+    margin-left: 10em;
+    width: 50em;
+}
+

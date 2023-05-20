@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/brands.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/solid.css">
+</head>
+<body>
+    <div >        
+        <ul class="header">
+            <li id="author">
+                <p>Vinh Pham</p>
+                <p>Project in March</p>
+            </li>
+            <li class = "title">
+                <p id = "head-title">Landing Page</p>
+                <p id = "sub-head-title">For a cozy center bakery</p>
+            </li>
+        </ul>
+    </div>
+    <div id = "home-page">
+        <ul class="head-of-homepage">
+            <li id="company-logo">
+                <h2 id= "first">Tiffa</h2>
+                <h2>ny</h2>
+            </li>
+            <li class = "nav">
+                <ul class = "nav-bar">
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#About">About</a> </li>
+                    <li><a href="#">Menu</a> </li>
+                    <li><a href="#">Contact</a> </li>
+                    <li><a href="#" ><i id="lock-icon" class="fa-sharp fa-solid fa-lock"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="homepage-content showing">
+            <div class="homepage-text">
+                <h1>Celebratory without</h1>
+                <h1> time wasting</h1>
+                <p id="first-p">Order your perfect customised macaroon for </p>
+                <p>your holiday and get a 15% discount.The offer </p>
+                <p>is valid for orders over 20 pieces</p>
+                <div class="btn-hp">
+                    <button id ="order-now">Order now</button>
+                    <button id ="read-more">Read more</button>
+                </div>
+                
+            </div>
+            <img src="./assets/img/9_Marvelous_Macaron_Recipes-removebg-preview.png" alt="">
+        </div>
+        <div class="homepage-content">
+            <div class="homepage-text">
+                <h1>PVinh Quang Ph</h1>
+                <h1> time wasting</h1>
+                <p id="first-p">Order your perfect customised macaroon for </p>
+                <p>your holiday and get a 15% discount.The offer </p>
+                <p>is valid for orders over 20 pieces</p>
+                <div class="btn-hp">
+                    <button id ="order-now">Order now</button>
+                    <button id ="read-more">Read more</button>
+                </div>
+                
+            </div>
+            <img src="./assets/img/9_Marvelous_Macaron_Recipes-removebg-preview.png" alt="">
+        </div>
+        <i class="caret-btn fa-solid fa-caret-left"></i>
+        <i class="caret-btn fa-solid fa-caret-right"></i>
+        <div class="homepage-content">
+            <div class="homepage-text">
+                <h1>The Best cupcake</h1>
+                <h1>you have ever seen</h1>
+                <p id="first-p">Order your perfect customised macaroon for </p>
+                <p>your holiday and get a 15% discount.The offer </p>
+                <p>is valid for orders over 20 pieces</p>
+                <div class="btn-hp">
+                    <button id ="order-now">Order now</button>
+                    <button id ="read-more">Read more</button>
+                </div>
+                
+            </div>
+            <img src="./assets/img/9_Marvelous_Macaron_Recipes-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <div id = "About">
+        <h1 id="About-head">About project</h1>
+        <div id="half-left">
+            <div class="text">
+                <h2 class="text-head">About this company</h2>
+                <p class="text-description">Cozy family bakery in the city center</p>
+                <p class="text-description">with the possible delivery around the</p>
+                <p class="text-description">city</p>
+                <h2 class="text-head">Customer request</h2>
+                <p class="text-description">To make a light, aesthetic and easy</p>
+                <p class="text-description">landing page in gentle colors</p>
+                <h2 class="text-head">Task</h2>
+                <p class="text-description">Create a website showing the variety of</p>
+                <p class="text-description">the products with the possibility of</p>
+                <p class="text-description">ordering. The goal is attracting new</p>
+                <p class="text-description">customers</p>
+                <h2 class="text-head">Target audience</h2>
+                <p class="text-description">Quality-conscious families, office</p>
+                <p class="text-description">workers and event planners</p>
+    
+            </div>
+        </div>
+        <div id="half-right">
+            <img id = "bakery-store-img"src="./assets/img/f2ecd9a835829b223b2c395b4e302eae.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    const $ = document.querySelector.bind(document)
+    const $$ = document.querySelectorAll.bind(document)
+    const leftBtn = $(".fa-caret-left");
+    const rightBtn = $(".fa-caret-right");
+    var homePages = $$(".homepage-content");
+
+    var pos = 0;
+    var totalSlides = homePages.length
+    var sliderWidth = homePages[0].offsetWidth
+
+    $(document).ready(()=>{
+        
+    })
+
+//     homePages.forEach((homePage)=>{
+//         rightBtn.onclick = function(){
+//         $(".homepage-content.showing").classList.remove("showing");
+//         homePage.classList.add('showing')
+//     }
+// })
+        
+
+    
+
+    
+
+</script>
+</html>
+
+
+
